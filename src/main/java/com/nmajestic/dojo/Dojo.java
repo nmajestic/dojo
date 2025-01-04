@@ -1,5 +1,7 @@
 package com.nmajestic.dojo;
 
+import com.nmajestic.dojo.block.ModBlocks;
+import com.nmajestic.dojo.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +13,7 @@ public class Dojo implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.initialize();
+		ModItems.initialize();
 	}
 }
